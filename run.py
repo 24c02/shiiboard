@@ -7,7 +7,7 @@ buttons = {}
 
 with uinput.Device(MAPPING.values()) as device:
     for io, key_event in MAPPING.items():
-        button = Button(io)
+        button = Button(io, bounce_time=0.05)
         button.when_pressed = lambda: device.emit(key_event, 1)
         button.when_released = lambda: device.emit(key_event, 0)
         buttons[io] = button
