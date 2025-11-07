@@ -29,4 +29,13 @@ sudo ln -s $PWD/shiiboard.service /etc/systemd/system/
 
 `sudo service shiiboard start`?
 
+if that works,
+
+```
+sudo systemctl enable shiiboard
+```
+
+**license:**
+
+
 WTFPL. there's barely any code lol
