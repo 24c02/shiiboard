@@ -17,7 +17,7 @@ echo "uinput" | sudo tee /etc/modules-load.d/uinput.conf
 ```
 
 ```
-sed -i '' "s|/home/pi/shiiboard/|$PWD/|g" shiiboard.service
+sed -i '' "s|/home/pi/shiiboard|$PWD|g" shiiboard.service
 ```
 
 edit `mapping.py` to your heart's content
